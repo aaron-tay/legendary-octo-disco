@@ -1,0 +1,62 @@
+// Add globals here
+
+
+// usage: @import transition(...)
+@mixin transition($property, $time, $method) {
+  transition: $property $time $method;
+  -moz-transition: $property $time $method;
+  -webkit-transition: $property $time $method;
+}
+
+$chanomy-green: #4F8F05;
+$chanomy-green-lighter-1: #5fac06;
+$chanomy-green-lighter-2: #6ac007;
+
+$chanomy-green-invert: #ffffff;
+
+$primary: $chanomy-green;
+$primary-invert: $chanomy-green-invert;
+
+
+/* mixin for multiline */
+// http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: red) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+@mixin mediaContentMaxLines($numLines: 3, $bgColor: white, $lineHeight: 1.5em) {
+  max-height: $lineHeight * $numLines;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, $bgColor 75%);
+    content: '\00200c';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: ($lineHeight * ($numLines - 1)) - (($numLines - 1) * 0.1em);
+    width: 25%;
+    line-height: $lineHeight;
+  }
+}
