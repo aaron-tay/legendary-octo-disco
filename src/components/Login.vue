@@ -41,8 +41,7 @@
                   </p>
                 </div>
               </form>
-            </div>
-            <div class="column is-4 is-offset-4">
+              <br />
               <div class="has-text-centered">
                 <router-link :to="{ name: 'home' }" class="button is-light is-fullwidth">
                   無料会員登録 &nbsp;
