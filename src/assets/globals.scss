@@ -1,4 +1,9 @@
 // Add globals here
+$hakoro-grey: #E3E5E0;
+$hakoro-grey-invert: #050101;//#153243;
+// 284B63
+// F4F9E9
+// EEF0EB
 
 
 // usage: @import transition(...)
@@ -7,16 +12,6 @@
   -moz-transition: $property $time $method;
   -webkit-transition: $property $time $method;
 }
-
-$chanomy-green: #4F8F05;
-$chanomy-green-lighter-1: #5fac06;
-$chanomy-green-lighter-2: #6ac007;
-
-$chanomy-green-invert: #ffffff;
-
-$primary: $chanomy-green;
-$primary-invert: $chanomy-green-invert;
-
 
 /* mixin for multiline */
 // http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/

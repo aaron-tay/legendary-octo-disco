@@ -6,10 +6,12 @@
 @import './globals.scss';
 
 // 2. Set your own initial variables
-
+$primary: $hakoro-grey;
+$primary-invert: $hakoro-grey-invert;
+$link: $hakoro-grey-invert;
 
 // 3. Set the derived variables
-
+$white-ter: $hakoro-grey;
 
 // 4. Setup your Custom Colors
 
@@ -22,6 +24,7 @@
 //   "github": ($github, $github-invert)
 // );
 // $colors: map-merge($colors, $addColors);
+
 
 // 6. Import the rest of Bulma
 @import '~bulma/bulma';

@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import Home from '@/components/Home';
+import Login from '@/components/Login';
+import Profile from '@/components/Profile';
+import Hakoro from '@/components/Hakoro';
 
 Vue.use(Router);
 
@@ -9,22 +12,27 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: HelloWorld,
+      component: Home,
     },
     {
-      path: '/',
-      name: 'profile',
-      component: HelloWorld,
+      path: '/hakoro',
+      name: 'hakoro',
+      component: Hakoro,
     },
     {
       path: '/',
       name: 'activity',
-      component: HelloWorld,
+      component: Home,
     },
     {
-      path: '/',
-      name: 'hakoro',
-      component: HelloWorld,
+      path: '/profile',
+      name: 'profile',
+      component: Profile,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
     },
   ],
 });
