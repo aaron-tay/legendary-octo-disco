@@ -37,16 +37,13 @@
 
                 <nav class="level is-mobile">
                   <a class="level-item">
-                    <span class="icon is-small"><i class="fa fa-comment-o"></i></span>
+                    <span class="icon is-small">745&nbsp;<i class="fa fa-comment-o"></i></span>
                   </a>
                   <a class="level-item">
-                    <span class="icon is-small"><i class="fa fa-reply"></i></span>
+                    <span class="icon is-small">321&nbsp;<i class="fa fa-retweet"></i></span>
                   </a>
                   <a class="level-item">
-                    <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                  </a>
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fa fa-heart"></i></span>
+                    <span class="icon is-small">32k&nbsp;<i class="fa fa-heart"></i></span>
                   </a>
                 </nav>
               </div>
@@ -56,15 +53,18 @@
       </div>
       <br />
     </div>
+    <tab-navigation></tab-navigation>
   </div>
 </template>
 
 <script>
 import NavHeader from './NavHeader';
+import TabNavigation from './TabNavigation';
 
 export default {
   components: {
     NavHeader,
+    TabNavigation,
   },
   data() {
     return {

@@ -81,15 +81,18 @@
         </button>
       </div>
     </div>
+    <tab-navigation></tab-navigation>
   </div>
 </template>
 
 <script>
 import NavHeader from './NavHeader';
+import TabNavigation from './TabNavigation';
 
 export default {
   components: {
     NavHeader,
+    TabNavigation
   },
   data() {
     return {

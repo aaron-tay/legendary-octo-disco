@@ -1,10 +1,10 @@
 // Add globals here
 $hakoro-grey: #E3E5E0;
 $hakoro-grey-invert: #050101;//#153243;
-// 284B63
-// F4F9E9
-// EEF0EB
-
+$hakoro-a: #284B63;
+$hakoro-b: #F4F9E9;
+$hakoro-c: #EEF0EB;
+$hakoro-d: #ff6250;
 
 // usage: @import transition(...)
 @mixin transition($property, $time, $method) {

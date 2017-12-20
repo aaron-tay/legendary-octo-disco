@@ -35,7 +35,7 @@
                 <hr />
                 <div class="field">
                   <p class="control">
-                    <router-link :to="{ name: 'profile' }" class="button is-primary is-inverted is-fullwidth is-disabled is-medium">
+                    <router-link :to="{ name: 'activity' }" class="button is-primary is-inverted is-fullwidth is-disabled is-medium">
                       ログイン
                     </router-link>
                   </p>
