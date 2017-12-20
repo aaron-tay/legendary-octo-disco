@@ -4,6 +4,7 @@ import Home from '@/components/Home';
 import Login from '@/components/Login';
 import Profile from '@/components/Profile';
 import Hakoro from '@/components/Hakoro';
+import Activity from '@/components/Activity';
 
 Vue.use(Router);
 
@@ -20,9 +21,9 @@ export default new Router({
       component: Hakoro,
     },
     {
-      path: '/',
+      path: '/activity',
       name: 'activity',
-      component: Home,
+      component: Activity,
     },
     {
       path: '/profile',

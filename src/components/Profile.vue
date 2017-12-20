@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <nav-header></nav-header>
+    <nav-header>
+      <span>
+        プロフィール
+      </span>
+    </nav-header>
 
     <div class="section">
       <div class="container">
@@ -11,15 +15,35 @@
             </p>
           </figure>
           <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>あめちゃん</strong> <small>@ameamechyan</small>
-                <br>
-                ♡ make💄nail💅Hair🎀fashion💋にスポットをあてた
-              </p>
-            </div>
+            <nav class="level is-mobile">
+              <div class="level-item has-text-centered is-active">
+                <div>
+                  <p class="title is-4">259</p>
+                  <p class="heading">Boxes</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="title is-4">123</p>
+                  <p class="heading">Following</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="title is-4">456K</p>
+                  <p class="heading">Followers</p>
+                </div>
+              </div>
+            </nav>
           </div>
         </article>
+        <div class="content">
+          <p>
+            <strong>あめちゃん</strong> <small>@ameamechyan</small>
+            <br>
+            ♡ make💄nail💅Hair🎀fashion💋にスポットをあてた
+          </p>
+        </div>
       </div>
       <hr />
       <div class="container">
@@ -50,8 +74,8 @@ export default {
   },
   methods: {
     image(id) {
-      const num = ((id % 6) + 1);
-      return require(`@/assets/stock/sq-${num}.jpg`);
+      const num = ((id % 7) + 1);
+      return require(`@/assets/stock/box-${num}.jpg`);
     },
   },
 };
@@ -66,5 +90,9 @@ export default {
 .is-circle {
   border-radius: 999px;
   overflow: hidden;
+}
+
+.content {
+  margin-top: 0.75rem;
 }
 </style>

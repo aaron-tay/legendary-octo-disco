@@ -1,11 +1,41 @@
 <template>
   <div class="home">
-    <nav-header></nav-header>
+    <nav-header>
+      <span>
+        ハコ
+      </span>
+    </nav-header>
 
     <div class="section">
       <div class="container">
         <div class="image is-3by2">
-          <img src="~@/assets/stock/2.jpg" />
+          <img src="~@/assets/stock/box-2.jpg" />
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <div class="title">
+                    package of care
+                  </div>
+                  <div class="subtitle">
+                    <small>
+                      <router-link :to="{ name: 'profile', params: {} }">
+                        by @ameamechyan
+                      </router-link>
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="media-right">
+                <span class="icon is-medium"><i class="fa fa-star"></i></span>74k
+              </div>
+            </article>
+          </div>
         </div>
       </div>
       <br />

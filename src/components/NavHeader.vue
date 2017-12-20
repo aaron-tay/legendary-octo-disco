@@ -6,6 +6,10 @@
           <img src="~@/assets/hakoro-logo-alpha.png" alt="Hakoro">
         </router-link>
 
+        <span class="navbar-item">
+          <slot></slot>
+        </span>
+
         <!-- <button class="button navbar-burger">
           <span></span>
           <span></span>
