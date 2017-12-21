@@ -6,6 +6,9 @@ $hakoro-b: #F4F9E9;
 $hakoro-c: #EEF0EB;
 $hakoro-d: #ff6250;
 
+$hakoro-pink-background: #e5acc7;
+$hakoro-pink-foreground: #ed8cca;
+
 // usage: @import transition(...)
 @mixin transition($property, $time, $method) {
   transition: $property $time $method;

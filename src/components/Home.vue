@@ -41,13 +41,10 @@
             </div>
             <div class="column is-one-third is-offset-1">
               <h1 class="title">
-                Personalised services
+                自分らしく選べる
               </h1>
               <h2 class="subtitle">
-                Maecenas ac leo ac dolor suscipit pellentesque.
-                Aenean massa sem, scelerisque vitae odio sed, scelerisque auctor odio.
-                Pellentesque tristique metus ac sollicitudin sagittis.
-                Maecenas ut leo in nisl tincidunt fermentum ut at odio.
+                化粧品とは、体を清潔にしたり、見た目を美しくしたりする目的で、皮膚等に塗布等するもので、作用の緩和なものをいう。いわゆる基礎化粧品、メーキャップ化粧品、シャンプーなどである
               </h2>
               <p>
                 <router-link :to="{ name: 'login', params: { } }" class="button is-primary is-outlined is-inverted">

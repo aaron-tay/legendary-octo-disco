@@ -9,7 +9,7 @@
           </router-link>
         </div>
         <div class="level-item has-text-centered">
-          <router-link :to="{ name: 'hakoro', params: {} }">
+          <router-link :to="{ name: 'build', params: {} }">
             <span class="icon is-small"><i class="fa fa-plus"></i></span>
             <p class="heading">ハコ</p>
           </router-link>
