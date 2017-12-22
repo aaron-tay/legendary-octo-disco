@@ -40,6 +40,7 @@ footer.bottom-nav {
   left: 0;
   right: 0;
   background: white;
+  border-top: 1px solid #dbdbdb;
 }
 
 .router-link-active {
