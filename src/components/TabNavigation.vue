@@ -43,6 +43,6 @@ footer.bottom-nav {
 }
 
 .router-link-active {
-  color: $hakoro-d;
+  color: $hakoro-pink-foreground;
 }
 </style>

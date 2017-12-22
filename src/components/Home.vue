@@ -15,11 +15,11 @@
     <section class="section">
       <div class="container">
         <div class="columns is-multiline">
-          <div class="column is-one-third has-text-centered">
+          <div class="column is-one-third has-text-centered" v-for="i in 1,2,3" :class="{ 'is-hidden-touch': i >= 2 }">
             <div class="content">
               <p>
                 <div class="image is-3by2">
-                  <img src="~@/assets/stock/1.jpg" />
+                  <img :src="image(i)" />
                 </div>
               </p>
               <p>
@@ -70,10 +70,7 @@
                 Hakoro Boxes to you
               </h1>
               <h2 class="subtitle">
-                Ac sollicitudin sagittis pellentesque tristique metus.
-                Tincidunt fermentum ut at odio maecenas ut leo in nisl.
-                Odio odio aenean sed, scelerisque auctor massa sem, scelerisque vitae.
-                Suscipit ac dolor Maecenas ac leo pellentesque.
+                化粧品とは、体を清潔にしたり、見た目を美しくしたりする目的で、皮膚等に塗布等するもので、作用の緩和なものをいう。いわゆる基礎化粧品、メーキャップ化粧品、シャンプーなどである
               </h2>
               <p>
                 <router-link :to="{ name: 'hakoro', params: { } }" class="button is-primary is-outlined">
@@ -138,6 +135,12 @@ export default {
   data() {
     return {
     };
+  },
+  methods: {
+    image(id) {
+      const num = (id % 7);
+      return require(`@/assets/stock/${num}.jpg`);
+    },
   },
 };
 </script>
